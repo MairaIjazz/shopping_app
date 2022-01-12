@@ -1,0 +1,23 @@
+.link_list {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.link_item {
+  list-style: none;
+  color: #f00946;
+  text-decoration: underline;
+  text-align: center;
+  margin: 2px 20px;
+}
+
+@media (max-width: 300px) {
+  .link_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .link_item {
+    margin: 15px 20px;
+  }
+}

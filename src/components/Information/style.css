@@ -1,0 +1,110 @@
+.navbar-logo2 {
+  color: black;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 10px 62px;
+}
+@media (max-width: 280px) {
+  .navbar-logo2 {
+    font-size: 15px;
+  }
+}
+.Info-heading {
+  background-color: rgb(185, 185, 185);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin: 13px 0;
+  height: 6rem;
+}
+@media (max-width: 600px) {
+  .Info-heading {
+    font-size: 20px;
+  }
+}
+.form {
+  height: 34rem;
+  width: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.control {
+  margin: 18px auto;
+  position: relative;
+  top: 1rem;
+}
+input[type="text"] {
+  width: 38rem;
+  margin: 0px auto;
+  height: 3rem;
+}
+@media (max-width: 600px) {
+  input[type="text"] {
+    width: 26rem;
+  }
+}
+@media (max-width: 430px) {
+  input[type="text"] {
+    width: 16rem;
+  }
+}
+@media (max-width: 280px) {
+  input[type="text"] {
+    width: 10rem;
+  }
+}
+input[type="integers"] {
+  width: 38rem;
+  margin: 0px auto;
+  height: 3rem;
+}
+@media (max-width: 600px) {
+  input[type="integers"] {
+    width: 26rem;
+  }
+}
+@media (max-width: 430px) {
+  input[type="integers"] {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 280px) {
+  input[type="integers"] {
+    width: 10rem;
+  }
+}
+label {
+  font-weight: bold;
+  /* font-size: 15px; */
+  /* margin: 0px 23px; */
+  display: flex;
+  justify-content: flex-start;
+}
+.actions {
+  margin: 34px auto;
+  width: 7rem;
+  height: 34px;
+}
+.meetbtn {
+  background-color: rgb(93, 6, 32);
+  width: 140px;
+  height: 38px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.meetbtn:hover,
+.meetbtn:active {
+  color: rgb(93, 6, 32);
+  background-color: white;
+  border: 2px solid black;
+}

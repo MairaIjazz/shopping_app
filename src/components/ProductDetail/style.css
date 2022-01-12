@@ -1,0 +1,134 @@
+.row_detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 860px) {
+  .row_detail {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.detail_heading {
+  margin-top: 1rem;
+  font-size: 21px;
+  background-color: rgb(221, 218, 218);
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .detail_heading {
+    font-size: 14px;
+  }
+}
+.product_detail_img {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+.product_detail_img img {
+  width: 300px;
+  height: 350px;
+  box-shadow: 1px 1px 7px 2px grey;
+}
+@media (max-width: 330px) {
+  .product_detail_img img {
+    width: 150px;
+    height: 250px;
+  }
+}
+
+.product_detail {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 860px) {
+  .product_detail {
+    text-align: center;
+  }
+}
+
+.product_detail_name {
+  margin: 17px 0px;
+  font-size: 25px;
+  font-weight: 900;
+}
+@media (max-width: 330px) {
+  .product_detail_name {
+    font-size: 16px;
+  }
+}
+.product_detail_price {
+  font-weight: 700;
+}
+.desc_heading {
+  margin-top: 1rem;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+@media (max-width: 330px) {
+  .desc_heading {
+    font-size: 13px;
+  }
+}
+.product_detail_dec {
+  margin-top: 0.5rem;
+  font-size: 15px;
+}
+@media (max-width: 330px) {
+  .product_detail_dec {
+    font-size: 12px;
+  }
+}
+.detail_row {
+  border: 1px solid black;
+  text-align: center;
+  width: 55px;
+}
+.incdec {
+  margin-top: 3rem;
+}
+.dec,
+.inc,
+.quantity {
+  width: 50px;
+  height: 50px;
+  border: 1px solid silver;
+  font-size: 13px;
+  padding: 1px 5px;
+}
+
+.inc {
+  border: 1px solid;
+  cursor: pointer;
+}
+.quantity {
+  border: 1px solid;
+  border-left: none;
+  border-right: none;
+}
+.dec {
+  border: 1px solid;
+  cursor: pointer;
+}
+:focus {
+  outline: none;
+}
+
+.button_pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 40px;
+}
+.main_button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 2rem;
+  color: white;
+  border: none;
+  background-color: #1c2237;
+}

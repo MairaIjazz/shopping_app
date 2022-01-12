@@ -1,0 +1,33 @@
+.unstitched_container {
+  text-align: center;
+  margin-top: 9rem;
+}
+
+.unstitch_paragraph {
+  color: darkslategray;
+}
+.unstitch_heading {
+  font-size: 35px;
+}
+.unstitch_paragraph {
+  font-size: 18px;
+  margin-top: 25px;
+}
+@media (max-width: 400px) {
+  .unstitched_container {
+    margin-top: 4rem;
+  }
+
+  .unstitch_heading {
+    font-size: 22px;
+  }
+  .unstitch_paragraph {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 300px) {
+  .unstitch_heading {
+    font-size: 14px;
+  }
+}

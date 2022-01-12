@@ -1,0 +1,251 @@
+.navbar {
+  background: #1c2237;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.container {
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin: -30px 62px;
+}
+
+.navbar-icon {
+  margin-right: 0.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  justify-content: flex-end;
+  margin: -53px -2px;
+}
+.mobnav-menu {
+  display: none;
+}
+
+.nav-item {
+  height: 80px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid #f00946;
+}
+
+.nav-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+}
+.web-btn {
+  width: 197px;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 900;
+  color: white;
+  background: #1c2237;
+  border: 1px solid white;
+}
+.web-btn:hover,
+.web-btn:active {
+  color: #1c2237;
+  background: white;
+  border: 1px solid #1c2237;
+}
+
+.btnCartCount .count {
+  position: absolute;
+  background-color: red;
+  top: 12px;
+  z-index: -1;
+  /* transform: rotate(-45deg); */
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  color: white;
+  padding: 1px 5px;
+}
+
+@media (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .mobnav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 92vh;
+    position: absolute;
+    top: 80px;
+    left: -170%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    justify-content: end;
+    margin: 0px 0px;
+  }
+
+  .mobnav-menu.active {
+    background: #1c2237;
+    left: 0;
+    opacity: 1;
+    transition: all 0.6s ease;
+    z-index: 1;
+  }
+
+  .mobnav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 44px 55px;
+    height: 100%;
+  }
+
+  .mobnav-links:hover {
+    color: #f00946;
+    /* transform: scale(1.2);
+    transition: all 0.3s ease; */
+  }
+
+  .mobnav-item:hover {
+    border: none;
+  }
+
+  .mobnav-item {
+    width: 100%;
+    list-style: none;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+    margin: 0px 0px;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
+  .mob-btn {
+    width: 311px;
+    height: 53px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 900;
+    color: white;
+    background: #1c2237;
+    border: 1px solid white;
+  }
+  .mob-btn:hover,
+  .mob-btn:active {
+    color: #1c2237;
+    background: white;
+    border: 1px solid #1c2237;
+  }
+  .mob-btnCartCount .mob-count {
+    position: absolute;
+    background-color: red;
+    top: 260px;
+    z-index: -1;
+    /* transform: rotate(-45deg); */
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: white;
+    padding: 1px 5px;
+  }
+}
+@media (max-width: 332px) {
+  .navbar-logo {
+    font-size: 20px;
+  }
+  .menu-icon {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 218px) {
+  .navbar-logo {
+    font-size: 11px;
+  }
+  .menu-icon {
+    font-size: 0.8rem;
+  }
+}
